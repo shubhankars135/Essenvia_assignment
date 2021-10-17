@@ -17,18 +17,27 @@ For mac\linux: `.venv/bin/activate`
 6. Runserver    
 `python manage.py runserver`
 7. Hit following API to fill values in DB for item, inventory, teams
+
 http://127.0.0.1:8000/fill_db
+
+
 
 
 **API SPECIFICATIONS**
 
 This project has following APIs:
 
-1. Fetch order number from backend
+1.a Fetch order number from backend
 
    URL : http://127.0.0.1:8000/get_order_no
    
    response : {"order_no": "171021_2"}
+   
+1.b Create a new order
+
+   URL : http://127.0.0.1:8000/v1/orders/
+   
+   Kindly check collection for request format
   
 2. Check inventory status
 
@@ -64,4 +73,8 @@ This project has following APIs:
             "estimated_delivery_at": "2021-10-18T01:19:32.043026+05:30"
         }
     ]`
+
+4. Get the Daily sales report 
+
+   URL : http://127.0.0.1:8000/generate_day_report
 
