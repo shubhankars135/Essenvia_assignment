@@ -11,6 +11,7 @@ For mac\linux: `.venv/bin/activate`
 3. Install the required libraries and packages   
 `pip install -r requirements.txt` 
 4. Make Migration    
+`cd FlipZonApp`
 `python manage.py makemigrations`   
 5. Migrate    
 `python manage.py migrate`  
