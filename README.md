@@ -16,6 +16,8 @@ For mac\linux: `.venv/bin/activate`
 `python manage.py migrate`   
 6. Runserver    
 `python manage.py runserver`
+7. Hit following API to fill values in DB for item, inventory, teams
+http://127.0.0.1:8000/fill_db
 
 
 **API SPECIFICATIONS**
@@ -24,13 +26,13 @@ This project has following APIs:
 
 1. Fetch order number from backend
 
-   URL : (http://127.0.0.1:8000/get_order_no)
+   URL : http://127.0.0.1:8000/get_order_no
    
    response : {"order_no": "171021_2"}
   
 2. Check inventory status
 
-   URL : (http://127.0.0.1:8000/v1/item_inventory/)
+   URL : http://127.0.0.1:8000/v1/item_inventory/
    
    `response : [
       {
@@ -46,7 +48,7 @@ This project has following APIs:
     ]`
 3. Check order confirmation status / Estimated time of delivery
 
-   URL: (http://127.0.0.1:8000/v1/order_info/)
+   URL: http://127.0.0.1:8000/v1/order_info/
    
    `response : [
         {
