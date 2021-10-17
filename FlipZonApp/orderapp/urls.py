@@ -9,7 +9,7 @@ from rest_framework.routers import DefaultRouter
 router_v1 = DefaultRouter()
 router_v1.register('orders', viewsets.OrderViewSet)
 router_v1.register('item_inventory', viewsets.ItemInventoryViewSet)
-router_v1.register('delivery_info', viewsets.OrderDeliveryInfoViewSet)
+router_v1.register('order_info', viewsets.OrderDeliveryInfoViewSet)
 
 
 urlpatterns = [

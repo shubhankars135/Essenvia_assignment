@@ -1,0 +1,36 @@
+{
+	"variables": [],
+	"info": {
+		"name": "FlipZone",
+		"_postman_id": "a275c100-84f1-7d14-9ccd-369d98c03de7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Orders ",
+			"request": {
+				"url": "http://127.0.0.1:8000/v1/orders/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic Og==",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"item_list\" : [\n\t\t{\n\t\t\t\"model_number\":\"T20214K\", \n\t\t\t\"quantity\": 2\n\t\t\t\n\t\t},\n\t\t{\n\t\t\t\"model_number\":\"R395LIL\", \n\t\t\t\"quantity\": 1\n\t\t\t\n\t\t}\n\t\t\n\t],\n\t\"customer_name\" : \"john\",\n\t\"customer_address\" : \"mumbai\",\n\t\"address_distance\" : 4\n}"
+				},
+				"description": "Post API for creating new orders"
+			},
+			"response": []
+		}
+	]
+}
