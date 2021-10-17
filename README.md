@@ -13,13 +13,16 @@ For mac\linux: `.venv/bin/activate`
 4. Make Migration    
 `python manage.py makemigrations`   
 5. Migrate    
-`python manage.py migrate`   
-6. Runserver    
+`python manage.py migrate`  
+6. Create User
+`python manage.py createsuperuser`
+8. Runserver    
 `python manage.py runserver`
-7. Hit following API to fill values in DB for item, inventory, teams
+8. Hit following API to fill values in DB for item, inventory, teams
 
 http://127.0.0.1:8000/fill_db
 
+9. All values can be checked in admin panel
 
 
 
@@ -37,7 +40,7 @@ This project has following APIs:
 
    URL : http://127.0.0.1:8000/v1/orders/
    
-   Kindly check collection for request format
+   Kindly check collection for request format (kindly update user credentials in the collection file)
   
 2. Check inventory status
 
