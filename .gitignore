@@ -1,0 +1,5 @@
+flipZonapp.sqlite3
+.venv
+__pycache__
+migrations
+*.pyc
